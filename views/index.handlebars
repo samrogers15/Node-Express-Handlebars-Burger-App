@@ -11,7 +11,10 @@
                 <ul>
                     {{#each burgers}}
                         {{#unless devoured}}
-                            <button class="change-status" data-id="{{id}}" data-newBurger="{{false}}"></button>
+                            <li>
+                                {{name}}
+                                {{!-- <button class="change-status" data-id="{{id}}" data-newBurger="{{true}}"></button> --}}
+                            </li>
                         {{/unless}}
                     {{/each}}
                 </ul>
@@ -22,6 +25,9 @@
             <div class="container devouredBurgers">
                 <ul>
                     {{#each burgers}}
+                        {{#if devoured}}
+                            {{name}}
+                        {{/if}}
                     {{/each}}
                 </ul>
             </div>

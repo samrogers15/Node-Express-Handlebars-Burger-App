@@ -3,7 +3,7 @@ $(function() {
         const id = $(this).data("id");
         const newBurger = $(this).data("newBurger");
 
-        var newBurgerState = {
+        const newBurgerState = {
             devoured: newBurger
         };
 
@@ -23,7 +23,7 @@ $(function() {
 
         const newBurger = {
             name: $("#newBurgerName").val().trim(),
-            devoured: 'false'
+            devoured: 0
         }
 
         $.ajax("/api/burgers/", {
