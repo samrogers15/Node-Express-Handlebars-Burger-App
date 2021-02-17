@@ -1,5 +1,11 @@
 * {
     font-family: 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+h2 {
+    padding-top: 5px;
 }
 
 .navbar-brand {
@@ -8,8 +14,9 @@
     font-size: 50px;
 }
 
-#ready,
-#devoured {
-    text-align: center;
-    text-decoration: underline;
+.ready,
+.devoured,
+.new {
+    background-color: #ffffff;
+    opacity: .90;
 }
