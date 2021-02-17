@@ -16,7 +16,22 @@ h2 {
 
 .ready,
 .devoured,
-.new {
+.new,
+.burgerPic {
     background-color: #ffffff;
     opacity: .90;
+    margin: auto;
+}
+
+.burgerPic img {
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+
+#ready,
+#devoured {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
 }

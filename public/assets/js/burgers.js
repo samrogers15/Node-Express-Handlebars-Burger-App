@@ -22,6 +22,8 @@ $(function() {
     $(".newBurgerForm").on("submit", function(event) {
         event.preventDefault();
 
+        $(".burgersContainer").show();
+
         const newBurger = {
             burger_name: $("#newBurgerName").val().trim(),
             devoured: 0

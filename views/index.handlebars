@@ -2,11 +2,21 @@
   <span class="navbar-brand mb-0 h1">Eat Da Burgers!</span>
 </nav>
 
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 border border-dark border-3 mx-auto burgerPic">
+            <img src="/assets/img/burger.png" alt="cheeseburger">
+        </div>
+    </div>
+</div>
+
 <div class="container-lg">
     <br>
-    <div class="container mx-auto">
-        <div class="row mx-auto ">
-            <div class="col-md-4 border border-dark border-3 mx-auto ready">
+    <div class="container mx-auto burgersContainer">
+        <div class="row mx-auto">
+            <div class="col-md-4 border border-dark border-3 mx-auto ready mt-0">
                 <h2 id="ready">Burgers: Ready To Eat!</h2>
                 <div class="container">
                     <ul>
@@ -22,7 +32,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4 border border-dark border-3 mx-auto devoured">
+            <div class="col-md-4 border border-dark border-3 mx-auto devoured mt-0">
                 <h2 id="devoured">Burgers: Devoured!</h2>
                 <div class="container">
                     <ul>
@@ -42,11 +52,14 @@
     
     <br>
     <br>
-    <div class="container border border-dark border-3 new">
-        <h2>Add a Burger!</h2>
+    
+    <div class="col-md-10 border border-dark border-3 new">
+        <div class="row mx-auto">
+            <h2>Add a Burger!</h2>
+        </div>
         <br>
         <form class="newBurgerForm">
-            <div class="form-group row">
+            <div class="form-group row mx-auto">
                 <div class="col-sm-2">
                     <label for="newBurgerName" class="col-form-label">Burger Name</label>
                 </div>
@@ -55,7 +68,7 @@
                 </div>
             </div>
             <br>
-            <div class="form-group row">
+            <div class="form-group row mx-auto">
                 <div class="col-sm-10">
                     <button type="submit" class="btn btn-primary">Enter a new burger!</button>
                 </div>
