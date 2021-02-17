@@ -34,11 +34,10 @@ const orm = {
             if (err) throw err;
             cb(res);
         })
-        // return connection.query(`SELECT * FROM burgers ORDER BY id ASC`)
     },
 
     insertOne: function(table, cols, vals, cb) {
-        const queryString = "INSERT INTO " + table;
+        var queryString = "INSERT INTO " + table;
         
         queryString += " (";
         queryString += cols.toString();
@@ -53,11 +52,10 @@ const orm = {
             if (err) throw err;
             cb(res);
         })
-        // return connection.query(`INSERT INTO burgers SET ?`, data)
     },
 
     updateOne: function(table, objColVals, condition, cb) {
-        const queryString = "UPDATE " + table;
+        var queryString = "UPDATE " + table;
 
         queryString += " SET ";
         queryString += objToSql(objColVals);
@@ -68,9 +66,8 @@ const orm = {
 
         connection.query(queryString, (err, res) => {
             if (err) throw err;
-            cb(result);
+            cb(res);
         })
-        // return connection.query(`UPDATE burgers SET devoured = ? WHERE burger_name = ?`, data, name)
     }
 }
 
