@@ -22,7 +22,7 @@
                     <ul>
                         {{#each burgers}}
                             {{#unless devoured}}
-                                <li>
+                                <li id="burgerList">
                                     {{burger_name}}
                                     <button type="button" class="change-status btn btn-warning btn-sm" data-id="{{id}}">DEVOUR IT!</button>
                                 </li>

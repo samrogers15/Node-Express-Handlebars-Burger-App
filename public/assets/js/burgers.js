@@ -1,4 +1,5 @@
 $(function() {
+
     $(".change-status").on("click", function(event) {
         const id = $(this).data("id");
 
@@ -21,8 +22,6 @@ $(function() {
 
     $(".newBurgerForm").on("submit", function(event) {
         event.preventDefault();
-
-        $(".burgersContainer").show();
 
         const newBurger = {
             burger_name: $("#newBurgerName").val().trim(),
