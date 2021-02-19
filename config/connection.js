@@ -13,13 +13,6 @@ if (process.env.JAWSDB_URL) {
         database: 'burgers_db',
     })
 };
-// const connection = mysql.createConnection({
-//     host: 'localhost',
-//     port: 3306,
-//     user: 'root',
-//     password: process.env.password,
-//     database: 'burgers_db',
-// });
 
 connection.connect((err) => {
     if (err) throw err;
